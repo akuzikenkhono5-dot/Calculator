@@ -1,12 +1,31 @@
-#keys{
+body{
+    margin: 0;
+    display: flex;
+    justify-self: center;
+    height: 100vh;
+}
 
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color:cornsilk ;
 }
 button{
     width: 100px;
     height: 100px;
     border-radius: 10px;
     border: none;
-    background-color:beige;
+    background-color:white;
     color:black;
     font-size: 30px;
     cursor:pointer;
