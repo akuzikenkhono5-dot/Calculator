@@ -1,0 +1,14 @@
+#keys{
+
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color:beige;
+    color:black;
+    font-size: 30px;
+    cursor:pointer;
+
+}

@@ -5,28 +5,43 @@
     <script src="calculator.js"></script>
     <head>
         <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="text" id="CalcDisplay"><br>
-        <button onclick="display('9')">9</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('/')">÷</button><br>
-        <button onclick="display('6')">6</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('*')">×</button><br>
-        <button onclick="display('3')">3</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('1')">1</button>
-        <button onclick="display('-')">-</button><br>
-        <button onclick="display('0')">0</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="display('=')">=</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('C')">C</button><br>
-        <button onclick="display('^')">^</button>
-        <button onclick="display('sqrt')">√</button>
-        <button onclick="display('()')">()</button>
+        <div id="calculator">
+            <input type="text" id="display"readonly>
+            <div id="keys">
+                <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="operator('/')">÷</button><br>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="operator('*')">×</button><br>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="operator('-')">-</button><br>
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="operator('+')">+</button>
+        <button onclick="clearDisplay()">C</button><br>
+        <button onclick="operator('^')">^</button>
+        <button onclick="operator('sqrt')">√</button>
+        <button onclick="operator('()')">()</button>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
     </body>
+    <script src="calculator.js"></script>
 </html>
